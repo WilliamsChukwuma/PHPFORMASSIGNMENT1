@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Newsletter</title>
+
+    <style>
+
+        :root{
+            --primary-color: #ffd5af;
+            --secondary-color: #e59a59;
+            --tertiary-color: #888870;
+            --final-color: #712e1e;
+           }
+                 
+        /* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), #ffd5af);
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #0047AB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Header Styles */
+header{
+    text-align: center;
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--final-color);
+    padding: auto 16px;
+    margin-right: 40px;
+    /* margin-bottom: 20px; */
+}
+
+.navbar a:last-child{
+    margin-right: 0;
+}
+
+.navbar a:hover{
+    border-radius: 30px;
+    background-color: var(--tertiary-color);
+    padding: 10px 30px 10px 30px;
+}
+
+
+/* Main Styles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-us {
+    background-color: transparent;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#benefits {
+    margin-top: 20px;
+}
+
+#benefits ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#benefits li {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#benefits button {
+    margin-top: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Footer Styles */
+footer{
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.php">HOME</a>
+            <a href="about.html">ABOUT US</a>            
+            <a href="#benefits">WHAT YOU BENEFIT?</a>
+            <a href="view.php">VIEW CLIENTS</a>
+            <a href="contact.html">CONTACT US</a>
+           </nav>
+    </header>
+    <main>
+        <section class="about-us">
+            <h1>About Us</h1>
+            <p>Welcome to our business newsletter! We are a team of passionate professionals dedicated to providing you with the latest insights, trends, and news in our industry. Our mission is to empower you with valuable information that can help you make informed decisions and grow your business.</p>
+        </section>
+        <section id="benefits">
+            <h2>Why Subscribe?</h2>
+            <ul>
+                <li>
+                    <i class="fas fa-newspaper"></i>
+                    <p>Stay Informed: Get the latest industry news, trends, and insights delivered straight to your inbox.</p>
+                </li>
+                <li>
+                    <i class="fas fa-lock"></i>
+                    <p>Exclusive Content: Receive access to exclusive content, such as interviews with industry leaders, in-depth analyses, and how-to guides.</p>
+                </li>
+                <li>
+                    <i class="fas fa-tag"></i>
+                    <p>Special Offers: Be the first to know about special offers, discounts, and promotions from our partners and us.</p>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <p>Networking Opportunities: Connect with like-minded professionals and expand your network.</p>
+                </li>
+                <li>
+                    <i class="fas fa-rocket"></i>
+                    <p>Personal Growth: Learn new skills and strategies that can help you grow both personally and professionally.</p>
+                </li>
+            </ul>
+            <a href="index.php"><button>Subscribe Now</button></a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WILLIAMS CHUKWUMA. All rights reserved.</p>
+    </footer>
+</body>
+</html>
